@@ -3261,3 +3261,351 @@ button {
     grid-template-columns: 1fr;
   }
 }
+/* ================================
+   CLASSSPHERE ROLE SELECTION
+================================ */
+
+.role-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #eff6ff 0%, #f1eeff 100%);
+  padding: 30px;
+}
+
+.role-card {
+  width: 100%;
+  max-width: 520px;
+  background: #ffffff;
+  border-radius: 24px;
+  padding: 45px;
+  box-shadow: 0 20px 60px rgba(30, 58, 138, 0.12);
+  text-align: center;
+}
+
+.role-logo {
+  width: 64px;
+  height: 64px;
+  margin: 0 auto 20px;
+  border-radius: 18px;
+  background: #2563eb;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  font-weight: 800;
+}
+
+.role-card h1 {
+  margin: 0;
+  color: #172033;
+  font-size: 30px;
+}
+
+.role-subtitle {
+  margin: 10px 0 30px;
+  color: #667085;
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+.role-options {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.role-button {
+  width: 100%;
+  border: 1px solid #e4e7ec;
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 18px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  text-align: left;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.role-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(23, 32, 51, 0.08);
+}
+
+.student-role:hover {
+  border-color: #2563eb;
+  background: #eff6ff;
+}
+
+.teacher-role:hover {
+  border-color: #7c5cfc;
+  background: #f1eeff;
+}
+
+.role-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f2f4f7;
+  font-size: 23px;
+  flex-shrink: 0;
+}
+
+.role-button strong {
+  display: block;
+  color: #172033;
+  font-size: 16px;
+  margin-bottom: 4px;
+}
+
+.role-button span {
+  display: block;
+  color: #667085;
+  font-size: 13px;
+}
+
+.role-footer {
+  margin: 30px 0 0;
+  color: #98a2b3;
+  font-size: 12px;
+}
+/* ================================
+   CLASSSPHERE LOGIN
+================================ */
+
+.login-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+  background: linear-gradient(
+    135deg,
+    #eff6ff 0%,
+    #f1eeff 50%,
+    #fdeef4 100%
+  );
+}
+
+.login-card {
+  width: 100%;
+  max-width: 500px;
+  background: #ffffff;
+  padding: 42px;
+  border-radius: 24px;
+  box-shadow: 0 24px 70px rgba(30, 58, 138, 0.14);
+}
+
+.login-logo {
+  width: 64px;
+  height: 64px;
+  margin: 0 auto 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 18px;
+  background: #2563eb;
+  color: white;
+  font-size: 22px;
+  font-weight: 800;
+}
+
+.login-card h1 {
+  margin: 0;
+  text-align: center;
+  color: #172033;
+  font-size: 30px;
+}
+
+.login-subtitle {
+  margin: 10px 0 30px;
+  text-align: center;
+  color: #667085;
+  font-size: 14px;
+}
+
+.login-section-title {
+  margin-bottom: 14px;
+  color: #344054;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.role-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.role-select {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 18px;
+  border-radius: 16px;
+  border: 1px solid #e4e7ec;
+  background: white;
+  text-align: left;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.role-select:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(23, 32, 51, 0.08);
+}
+
+.student-select:hover {
+  background: #eff6ff;
+  border-color: #2563eb;
+}
+
+.teacher-select:hover {
+  background: #f1eeff;
+  border-color: #7c5cfc;
+}
+
+.role-emoji {
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  background: #f2f4f7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 23px;
+}
+
+.role-select strong {
+  display: block;
+  color: #172033;
+  font-size: 16px;
+  margin-bottom: 4px;
+}
+
+.role-select span:not(.role-emoji) {
+  color: #667085;
+  font-size: 13px;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.selected-role {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 14px;
+  margin-bottom: 24px;
+  border-radius: 14px;
+  background: #f8f9fc;
+}
+
+.selected-role > span {
+  font-size: 28px;
+}
+
+.selected-role strong {
+  display: block;
+  color: #172033;
+  font-size: 16px;
+}
+
+.selected-role small {
+  display: block;
+  margin-top: 3px;
+  color: #667085;
+}
+
+.login-form label {
+  margin-bottom: 7px;
+  color: #344054;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.login-form input {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 13px 14px;
+  margin-bottom: 18px;
+  border: 1px solid #d0d5dd;
+  border-radius: 10px;
+  outline: none;
+  font-size: 14px;
+}
+
+.login-form input:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+.login-submit {
+  width: 100%;
+  padding: 14px;
+  border: none;
+  border-radius: 11px;
+  background: #2563eb;
+  color: white;
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.login-submit:hover {
+  background: #1d4ed8;
+}
+
+.login-error {
+  margin: -5px 0 15px;
+  padding: 10px 12px;
+  border-radius: 9px;
+  background: #fef2f2;
+  color: #dc2626;
+  font-size: 13px;
+}
+
+.back-button {
+  margin-top: 13px;
+  padding: 10px;
+  border: none;
+  background: transparent;
+  color: #667085;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.back-button:hover {
+  color: #2563eb;
+}
+
+.login-footer {
+  margin-top: 28px;
+  text-align: center;
+  color: #98a2b3;
+  font-size: 12px;
+}
+
+@media (max-width: 600px) {
+  .login-page {
+    padding: 18px;
+  }
+
+  .login-card {
+    padding: 28px 22px;
+  }
+
+  .login-card h1 {
+    font-size: 25px;
+  }
+}
